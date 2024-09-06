@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link, useParams } from "react-router-dom";
 import Hero from "../component/Hero";
+import "./home.css"
 
 export default function Home() {
   const [users, setUsers] = useState([]);
@@ -24,14 +25,14 @@ export default function Home() {
 
   return (
       <>
-        <Hero/>
+<Hero/>
         <div className="container">
 
           <div className="py-4">
-            <table className="table border shadow">
+            <table className="table crypto-table border shadow">
               <thead>
               <tr>
-                <th scope="col">S.N</th>
+                <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Username</th>
                 <th scope="col">Email</th>
@@ -40,28 +41,26 @@ export default function Home() {
               </thead>
               <tbody>
               {users.map((user, index) => (
-                  <tr>
-                    <th scope="row" key={index}>
-                      {index + 1}
-                    </th>
+                  <tr key={index}>
+                    <th scope="row">{index + 1}</th>
                     <td>{user.name}</td>
                     <td>{user.username}</td>
                     <td>{user.email}</td>
                     <td>
                       <Link
-                          className="btn btn-primary mx-2"
+                          className="btn crypto-btn mx-2"
                           to={`/viewuser/${user.id}`}
                       >
                         View
                       </Link>
                       <Link
-                          className="btn btn-outline-primary mx-2"
+                          className="btn crypto-btn-outline mx-2"
                           to={`/edituser/${user.id}`}
                       >
                         Edit
                       </Link>
                       <button
-                          className="btn btn-danger mx-2"
+                          className="btn crypto-btn-danger mx-2"
                           onClick={() => deleteUser(user.id)}
                       >
                         Delete

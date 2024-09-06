@@ -1,0 +1,79 @@
+.crypto-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.crypto-table thead {
+    background-color: #1f1f1f; /* Slightly lighter for header */
+    color: #ffffff;
+}
+
+.crypto-table th,
+.crypto-table td {
+    padding: 12px 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.crypto-table tr:last-child td {
+    border-bottom: none;
+}
+
+.crypto-table tr {
+    transition: background 0.4s ease;
+}
+
+.crypto-table tr:hover {
+    background: linear-gradient(90deg, #1c1c1c, #333333); /* Gradient on hover */
+}
+
+.crypto-btn {
+    background: linear-gradient(135deg, #00c6ff, #0072ff); /* Blue gradient */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crypto-btn:hover {
+    background: linear-gradient(135deg, #0072ff, #00c6ff); /* Reversed gradient on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00c6ff;
+}
+
+.crypto-btn-outline {
+    background: transparent;
+    color: #00c6ff;
+    border: 2px solid #00c6ff;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crypto-btn-outline:hover {
+    background: #00c6ff;
+    color: #1a1a1a;
+    box-shadow: 0 0 15px #00c6ff;
+}
+
+.crypto-btn-danger {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b); /* Red gradient */
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.crypto-btn-danger:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c); /* Reversed gradient on hover */
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff416c;
+}

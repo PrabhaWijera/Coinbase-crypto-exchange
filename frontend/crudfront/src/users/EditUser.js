@@ -38,7 +38,7 @@ export default function EditUser() {
     <div className="container">
       <div className="row">
         <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-          <h2 className="text-center m-4">Edit User</h2>
+          <h2 className="text-center m-4">Edit Crypto</h2>
 
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="mb-3">
@@ -56,10 +56,10 @@ export default function EditUser() {
             </div>
             <div className="mb-3">
               <label htmlFor="Username" className="form-label">
-                Username
+                Launch Date
               </label>
               <input
-                type={"text"}
+                type={"date"}
                 className="form-control"
                 placeholder="Enter your username"
                 name="username"
@@ -69,7 +69,7 @@ export default function EditUser() {
             </div>
             <div className="mb-3">
               <label htmlFor="Email" className="form-label">
-                E-mail
+                Price
               </label>
               <input
                 type={"text"}

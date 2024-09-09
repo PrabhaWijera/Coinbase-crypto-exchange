@@ -27,7 +27,7 @@ export default function AddUser() {
     <div className="container">
       <div className="row">
         <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-          <h2 className="text-center m-4">Register User</h2>
+          <h2 className="text-center m-4">Register Crypto </h2>
 
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="mb-3">
@@ -37,7 +37,7 @@ export default function AddUser() {
               <input
                 type={"text"}
                 className="form-control"
-                placeholder="Enter your name"
+                placeholder="Enter Crypto"
                 name="name"
                 value={name}
                 onChange={(e) => onInputChange(e)}
@@ -45,12 +45,12 @@ export default function AddUser() {
             </div>
             <div className="mb-3">
               <label htmlFor="Username" className="form-label">
-                Username
+                Launch Date
               </label>
               <input
-                type={"text"}
+                type={"date"}
                 className="form-control"
-                placeholder="Enter your username"
+                placeholder="Enter Launch Date"
                 name="username"
                 value={username}
                 onChange={(e) => onInputChange(e)}
@@ -58,12 +58,12 @@ export default function AddUser() {
             </div>
             <div className="mb-3">
               <label htmlFor="Email" className="form-label">
-                E-mail
+                Price
               </label>
               <input
                 type={"text"}
                 className="form-control"
-                placeholder="Enter your e-mail address"
+                placeholder="Enter Price"
                 name="email"
                 value={email}
                 onChange={(e) => onInputChange(e)}
